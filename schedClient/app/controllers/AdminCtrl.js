@@ -16,7 +16,7 @@
 
             {
                 _id : "e0",
-                FullName : "Miguel Lopez",
+                FullName : "Whytee D'ville",
                 Email : "elPingo@gamil.com",
                 Phone : "8019186776",
                 ImgUrl : "https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg",
@@ -50,7 +50,7 @@
             },
             {
                 _id : "e1",
-                FullName : "Rufox Valdes",
+                FullName : "Slum Dogg",
                 Email : "gambino@gamil.com",
                 Phone : "8019199776",
                 ImgUrl : "https://s3.amazonaws.com/uifaces/faces/twitter/dakshbhagya/128.jpg",
