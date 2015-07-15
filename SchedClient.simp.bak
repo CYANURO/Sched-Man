@@ -63,7 +63,7 @@
       </counter>
       <counter>
         <item-type stereotype="" type="AbstractElementGroup" />
-        <value>96</value>
+        <value>95</value>
       </counter>
       <counter>
         <item-type stereotype="" type="UmlComment" />
@@ -408,9 +408,7 @@
       <associated-diagrams />
       <owned-items />
       <style class="default" />
-      <comment>Stores instance of User to allow access from UserCtrl
-
-Datastructures may differ according to user group; e.g., the admin DS also contains information from all users, in order to display the admin dashboard, which contains user grid and calendar entries for all users.</comment>
+      <comment>Stores instance of User to allow access from UserCtrl</comment>
     </item>
     <item id="di154300029811214437" cid="CN003" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:51">
       <stereotypes />
@@ -989,12 +987,12 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <layout ax="865" ay="332" awidth="20" aheight="171" x="865" y="332" width="20" height="171" angle="0" />
           </item>
           <item id="di853028433433125019" iid="a2dfca4f65ef46f5a8cec32649025040" creation-date="07/15/2015 12:14:51" order-index="13" type="entity">
-            <layout ax="980" ay="45" awidth="254" aheight="135" x="980" y="45" width="254" height="135" angle="0" />
+            <layout ax="980" ay="45" awidth="254" aheight="100" x="980" y="45" width="254" height="100" angle="0" />
           </item>
           <item id="di154300029811214437" iid="0a651e7082e143cbacb4a494aeba6391" creation-date="07/15/2015 12:14:51" order-index="14" type="comment-connector">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" name-position="10,-10" auto-path="" x1="980" y1="81" x2="945" y2="72" start-border-pos="0.933996341846607" end-border-pos="0.261">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" name-position="10,-10" auto-path="" x1="980" y1="77" x2="945" y2="72" start-border-pos="0.920077152252197" end-border-pos="0.261">
               <points>
-                <point x="980" y="81" />
+                <point x="980" y="77" />
                 <point x="945" y="72" />
               </points>
             </layout>
