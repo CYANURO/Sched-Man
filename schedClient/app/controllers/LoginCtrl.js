@@ -4,8 +4,7 @@
 
     angular
         .module("schedClient")
-        .controller("LoginCtrl",
-                    [ctrl]);
+        .controller("LoginCtrl", ['LoginService', ctrl]);
 
     function ctrl() {
         
@@ -17,12 +16,26 @@
         vm.userName = '';
         vm.password = '';
 
-        vm.signIn = function(){
+        vm.userNameFieldMsg = 'Enter email';
+        vm.passwordFieldMsg = 'Enter password';
 
-            // login service
+        vm.login = function(){
+
+            // var user = LoginService.GetUser(vm.userName, vm.password);
+            
+            if(user !== null) {
+
+                console.log("Successful Login");
+            }
+            else {
+
+                console.log("Falied login");
+            }
             
 
         };
+
+        return vm;
 
     }
 

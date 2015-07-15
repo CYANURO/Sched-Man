@@ -13,7 +13,7 @@
       </counter>
       <counter>
         <item-type stereotype="" type="UmlUseCase" />
-        <value>24</value>
+        <value>22</value>
       </counter>
       <counter>
         <item-type stereotype="" type="UmlLifeline" />
@@ -27,6 +27,10 @@
         <item-type stereotype="" type="UmlActivationBar" />
         <value>10</value>
       </counter>
+      <counter>
+        <item-type stereotype="" type="UmlSystemBoundary" />
+        <value>1</value>
+      </counter>
     </entity-names>
     <entity-ids>
       <counter>
@@ -35,7 +39,7 @@
       </counter>
       <counter>
         <item-type stereotype="" type="UmlUseCase" />
-        <value>25</value>
+        <value>23</value>
       </counter>
       <counter>
         <item-type stereotype="" type="UmlAssociation" />
@@ -43,7 +47,7 @@
       </counter>
       <counter>
         <item-type stereotype="" type="UmlInclude" />
-        <value>10</value>
+        <value>5</value>
       </counter>
       <counter>
         <item-type stereotype="" type="AbstractShapeItem" />
@@ -62,16 +66,20 @@
         <value>11</value>
       </counter>
       <counter>
-        <item-type stereotype="" type="AbstractElementGroup" />
-        <value>170</value>
-      </counter>
-      <counter>
         <item-type stereotype="" type="UmlComment" />
-        <value>5</value>
+        <value>6</value>
       </counter>
       <counter>
         <item-type stereotype="" type="UmlCommentConnector" />
-        <value>5</value>
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="AbstractElementGroup" />
+        <value>42</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlSystemBoundary" />
+        <value>2</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -143,6 +151,16 @@
       <owned-items />
       <style class="default" />
       <relation from="di648088656692876365" to="di717933352558480246">
+        <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+        <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+      </relation>
+    </item>
+    <item id="di444532561172403583" cid="REL003" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P7bd303185e97430faa5eff79f23470e4" creation-date="07/15/2015 10:18:47">
+      <stereotypes />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <relation from="di170795125765578226" to="di920298804429195939">
         <start-role id="" name="" navigability="" association-type="association" visibility="private" />
         <end-role id="" name="" navigability="" association-type="association" visibility="private" />
       </relation>
@@ -297,6 +315,13 @@
       <style class="default" />
       <use-case />
     </item>
+    <item id="di529001210474561830" cid="UC018" type="use-case" name="ViewAdminCalendar" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P7bd303185e97430faa5eff79f23470e4" creation-date="07/15/2015 11:43:15">
+      <stereotypes />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <use-case />
+    </item>
     <item id="di541779856367834766" cid="UC017" type="use-case" name="ViewAdminDashboard" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P7bd303185e97430faa5eff79f23470e4" creation-date="07/15/2015 11:41:34">
       <stereotypes />
       <associated-diagrams />
@@ -310,6 +335,16 @@
       <owned-items />
       <style class="default" />
       <relation from="di541779856367834766" to="di717933352558480246">
+        <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+        <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+      </relation>
+    </item>
+    <item id="di984820609390842229" cid="REL029" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P7bd303185e97430faa5eff79f23470e4" creation-date="07/15/2015 11:43:15">
+      <stereotypes />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <relation from="di529001210474561830" to="di717933352558480246">
         <start-role id="" name="" navigability="" association-type="association" visibility="private" />
         <end-role id="" name="" navigability="" association-type="association" visibility="private" />
       </relation>
@@ -348,20 +383,20 @@
         <end-role id="" name="" navigability="" association-type="association" visibility="private" />
       </relation>
     </item>
-    <item id="di965177454245639895" cid="CN002" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:08:51">
+    <item id="di965177454245639895" cid="CN002" type="comment-connector" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:08:51">
       <stereotypes />
       <associated-diagrams />
       <owned-items />
       <style class="default" />
     </item>
-    <item id="di943347869254313295" cid="CMT002" type="comment" name="Comment" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:08:51">
+    <item id="di943347869254313295" cid="CMT002" type="comment" name="Comment" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:08:51">
       <stereotypes />
       <associated-diagrams />
       <owned-items />
       <style class="default" />
       <comment>LoginService.Login(userName, password) returns a User data structure (or null)</comment>
     </item>
-    <item id="di853028433433125019" cid="CMT003" type="comment" name="Comment" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:51">
+    <item id="di853028433433125019" cid="CMT003" type="comment" name="Comment" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:51">
       <stereotypes />
       <associated-diagrams />
       <owned-items />
@@ -370,51 +405,34 @@
 
 Datastructures may differ according to user group; e.g., the admin DS also contains information from all users, in order to display the admin dashboard, which contains user grid and calendar entries for all users.</comment>
     </item>
-    <item id="di154300029811214437" cid="CN003" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:51">
+    <item id="di154300029811214437" cid="CN003" type="comment-connector" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:51">
       <stereotypes />
       <associated-diagrams />
       <owned-items />
       <style class="default" />
     </item>
-    <item id="di214734358875181071" cid="CMT004" type="comment" name="Comment" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:18:17">
+    <item id="di214734358875181071" cid="CMT004" type="comment" name="Comment" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:18:17">
       <stereotypes />
       <associated-diagrams />
       <owned-items />
       <style class="default" />
       <comment>Exposes functions to navigate views - so that controllers can request view changes.</comment>
     </item>
-    <item id="di524582589858729196" cid="CN004" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:18:17">
+    <item id="di524582589858729196" cid="CN004" type="comment-connector" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:18:17">
       <stereotypes />
       <associated-diagrams />
       <owned-items />
       <style class="default" />
     </item>
-    <item id="di810309760414956463" cid="UC023" type="use-case" name="UseCase23" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:26:45">
+    <item id="di250833618807009232" cid="CMT005" type="comment" name="Comment" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:39:51">
       <stereotypes />
       <associated-diagrams />
       <owned-items />
       <style class="default" />
-      <use-case />
+      <comment>Pretty much every use case is dependent on a succesful login</comment>
     </item>
-    <item id="di583371594744651193" cid="INC005" type="include" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:26:45">
-      <stereotypes>
-        <stereotype name="include" />
-      </stereotypes>
-      <associated-diagrams />
-      <owned-items />
-      <style class="default" />
-    </item>
-    <item id="di325135314469896781" cid="UC024" type="use-case" name="UseCase24" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:27:22">
+    <item id="di382068276735699367" cid="CN005" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:39:51">
       <stereotypes />
-      <associated-diagrams />
-      <owned-items />
-      <style class="default" />
-      <use-case />
-    </item>
-    <item id="di886039652758605854" cid="INC007" type="include" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:27:22">
-      <stereotypes>
-        <stereotype name="include" />
-      </stereotypes>
       <associated-diagrams />
       <owned-items />
       <style class="default" />
@@ -434,7 +452,7 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-usecase" id="p463335391403964974" name="UseCases" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="true" show-relationship-texts="true" auto-routed-paths="false">
+      <diagram type="uml-usecase" id="p463335391403964974" name="UseCaseDiagram1" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="true" show-relationship-texts="true" auto-routed-paths="false">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -446,7 +464,7 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
           </authors>
           <description />
           <creation-date>07/15/2015 10:16:12</creation-date>
-          <change-date>07/15/2015 12:34:21</change-date>
+          <change-date>07/15/2015 12:41:38</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -472,14 +490,6 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
               <start-role id="" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="" name="" navigability="" association-type="association" visibility="private" />
             </relation>
-          </item>
-          <item id="di858690058869087708" cid="INC009" type="include" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:31:22">
-            <stereotypes>
-              <stereotype name="include" />
-            </stereotypes>
-            <associated-diagrams />
-            <owned-items />
-            <style class="default" />
           </item>
           <item id="di884394028111484266" cid="REL018" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P7bd303185e97430faa5eff79f23470e4" creation-date="07/15/2015 11:33:07">
             <stereotypes />
@@ -511,44 +521,20 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
               <end-role id="" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
-          <item id="di243100096753135773" cid="INC004" type="include" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 11:49:06">
-            <stereotypes>
-              <stereotype name="include" />
-            </stereotypes>
-            <associated-diagrams />
-            <owned-items />
-            <style class="default" />
-          </item>
-          <item id="di832330708325129413" cid="INC006" type="include" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:26:51">
-            <stereotypes>
-              <stereotype name="include" />
-            </stereotypes>
-            <associated-diagrams />
-            <owned-items />
-            <style class="default" />
-          </item>
-          <item id="di292445782481322793" cid="INC008" type="include" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:27:26">
-            <stereotypes>
-              <stereotype name="include" />
-            </stereotypes>
-            <associated-diagrams />
-            <owned-items />
-            <style class="default" />
-          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
           <item id="di920298804429195939" iid="0862cb90b320427baf654b0fb509b173" creation-date="07/15/2015 10:16:16" order-index="0" type="entity">
             <layout ax="80" ay="157.5" awidth="70" aheight="140" x="80" y="157.5" width="70" height="140" angle="0" />
           </item>
           <item id="di768626235908582033" iid="09333047ee9d4a9ebc5b3befb017a65b" creation-date="07/15/2015 10:16:56" order-index="1" type="entity">
-            <layout ax="599" ay="100" awidth="120" aheight="75" x="599" y="100" width="120" height="75" angle="0" />
+            <layout ax="506" ay="-124.5" awidth="120" aheight="75" x="506" y="-124.5" width="120" height="75" angle="0" />
             <use-case show-extension-points="true" />
           </item>
           <item id="di690141550445417651" iid="9c2d7447bed34ab7aa061ee1efdf32e5" creation-date="07/15/2015 10:16:56" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="601" y1="148" x2="150" y2="222" start-border-pos="0.840245107014974" end-border-pos="0.365552793230329">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="512" y1="-70" x2="150" y2="204" start-border-pos="0.73834654490153" end-border-pos="0.332239859444754">
               <points>
-                <point x="601" y="148" />
-                <point x="150" y="222" />
+                <point x="512" y="-70" />
+                <point x="150" y="204" />
               </points>
             </layout>
             <relation from="di768626235908582033" from-iid="09333047ee9d4a9ebc5b3befb017a65b" to="di920298804429195939" to-iid="0862cb90b320427baf654b0fb509b173" />
@@ -569,14 +555,14 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
           <item id="di534574803520309255" iid="7c3d0627985b403fa278a55616a2bc43" creation-date="07/15/2015 10:42:40" order-index="7" type="entity">
-            <layout ax="520" ay="-3.5" awidth="120" aheight="75" x="520" y="-3.5" width="120" height="75" angle="0" />
+            <layout ax="506" ay="32.5" awidth="120" aheight="75" x="506" y="32.5" width="120" height="75" angle="0" />
             <use-case show-extension-points="true" />
           </item>
           <item id="di289952079173526751" iid="5988290896954fbbb49ae6ed636af0af" creation-date="07/15/2015 10:42:40" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="535" y1="59" x2="150" y2="213" start-border-pos="0.791559143066406" end-border-pos="0.34981757572719">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="516" y1="91" x2="150" y2="216" start-border-pos="0.804933471679688" end-border-pos="0.353997067042759">
               <points>
-                <point x="535" y="59" />
-                <point x="150" y="213" />
+                <point x="516" y="91" />
+                <point x="150" y="216" />
               </points>
             </layout>
             <relation from="di534574803520309255" from-iid="7c3d0627985b403fa278a55616a2bc43" to="di920298804429195939" to-iid="0862cb90b320427baf654b0fb509b173" />
@@ -600,24 +586,24 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <layout ax="995" ay="175" awidth="70" aheight="140" x="995" y="175" width="70" height="140" angle="0" />
           </item>
           <item id="di170795125765578226" iid="93e0066e257b4623b7ba988ee1fe5466" creation-date="07/15/2015 10:44:39" order-index="12" type="entity">
-            <layout ax="407.5" ay="207.5" awidth="175.5" aheight="110" x="407.5" y="207.5" width="175.5" height="110" angle="0" />
+            <layout ax="478.25" ay="190" awidth="175.5" aheight="110" x="478.25" y="190" width="175.5" height="110" angle="0" />
             <use-case show-extension-points="true" />
           </item>
           <item id="di674218432430877819" iid="35d6eadd64fd4030964dfef70150ff6c" creation-date="07/15/2015 10:45:36" order-index="14" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="995" y1="235" x2="712" y2="155" start-border-pos="0.893025616237095" end-border-pos="0.434348602294922">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="995" y1="220" x2="619" y2="-69" start-border-pos="0.91971983228411" end-border-pos="0.514357376098633">
               <points>
-                <point x="995" y="235" />
-                <point x="712" y="155" />
+                <point x="995" y="220" />
+                <point x="619" y="-69" />
               </points>
             </layout>
             <relation from="di717933352558480246" from-iid="e555a54dbb4843738324e52eec30365d" to="di768626235908582033" to-iid="09333047ee9d4a9ebc5b3befb017a65b" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
           <item id="di884394028111484266" iid="6df955ca411944fd904b3ad39776e206" creation-date="07/15/2015 11:33:07" order-index="16" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="995" y1="229" x2="619" y2="62" start-border-pos="0.904305567060198" end-border-pos="0.468777783711751">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="995" y1="232" x2="613" y2="93" start-border-pos="0.898572186061314" end-border-pos="0.450431035359701">
               <points>
-                <point x="995" y="229" />
-                <point x="619" y="62" />
+                <point x="995" y="232" />
+                <point x="613" y="93" />
               </points>
             </layout>
             <relation from="di717933352558480246" from-iid="e555a54dbb4843738324e52eec30365d" to="di534574803520309255" to-iid="7c3d0627985b403fa278a55616a2bc43" />
@@ -638,24 +624,24 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
           <item id="di765024361150933018" iid="cbdb01f5be66460d997846b0c78209ba" creation-date="07/15/2015 11:38:18" order-index="19" type="entity">
-            <layout ax="491" ay="545.5" awidth="120" aheight="75" x="491" y="545.5" width="120" height="75" angle="0" />
+            <layout ax="506" ay="569.5" awidth="120" aheight="75" x="506" y="569.5" width="120" height="75" angle="0" />
             <use-case show-extension-points="true" />
           </item>
           <item id="di902309103119452601" iid="a8fb2a8e3625452fbd244a737c511fb0" creation-date="07/15/2015 11:38:18" order-index="20" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="603" y1="564" x2="995" y2="270" start-border-pos="0.234239451090495" end-border-pos="0.830897685459682">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="613" y1="583" x2="995" y2="272" start-border-pos="0.223802947998047" end-border-pos="0.826239231654576">
               <points>
-                <point x="603" y="564" />
-                <point x="995" y="270" />
+                <point x="613" y="583" />
+                <point x="995" y="272" />
               </points>
             </layout>
             <relation from="di765024361150933018" from-iid="cbdb01f5be66460d997846b0c78209ba" to="di717933352558480246" to-iid="e555a54dbb4843738324e52eec30365d" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
           <item id="di886419130341261671" iid="d90c917c84ae4c289ccc3f5267dfc787" creation-date="07/15/2015 11:39:39" order-index="21" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="150" y1="256" x2="506" y2="558" start-border-pos="0.426781627110073" end-border-pos="0.030328623453776">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="150" y1="257" x2="522" y2="581" start-border-pos="0.428415025983538" end-border-pos="0.0332728068033854">
               <points>
-                <point x="150" y="256" />
-                <point x="506" y="558" />
+                <point x="150" y="257" />
+                <point x="522" y="581" />
               </points>
             </layout>
             <relation from="di920298804429195939" from-iid="0862cb90b320427baf654b0fb509b173" to="di765024361150933018" to-iid="cbdb01f5be66460d997846b0c78209ba" />
@@ -704,55 +690,60 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
           <item id="di994264770324320460" iid="cc7274ed758f451c8782c44f37269e4f" creation-date="07/15/2015 11:41:00" order-index="28" type="entity">
-            <layout ax="381" ay="372.5" awidth="155" aheight="97" x="381" y="372.5" width="155" height="97" angle="0" />
+            <layout ax="478.5" ay="328" awidth="175" aheight="109" x="478.5" y="328" width="175" height="109" angle="0" />
             <use-case show-extension-points="true" />
           </item>
           <item id="di541779856367834766" iid="f1c6c2a6045849339eb5f6e263b3134b" creation-date="07/15/2015 11:41:34" order-index="30" type="entity">
-            <layout ax="809" ay="446.5" awidth="208" aheight="130" x="809" y="446.5" width="208" height="130" angle="0" />
+            <layout ax="1220" ay="411.5" awidth="208" aheight="130" x="1220" y="411.5" width="208" height="130" angle="0" />
             <use-case show-extension-points="true" />
           </item>
           <item id="di887359217162523401" iid="7e06af2ee607421cb14dfa40e63be7bc" creation-date="07/15/2015 11:41:34" order-index="31" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="942" y1="449" x2="999" y2="315" start-border-pos="0.159761208754319" end-border-pos="0.734550476074219">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="1243" y1="435" x2="1065" y2="272" start-border-pos="0.0270978487454928" end-border-pos="0.424107142857143">
               <points>
-                <point x="942" y="449" />
-                <point x="999" y="315" />
+                <point x="1243" y="435" />
+                <point x="1065" y="272" />
               </points>
             </layout>
             <relation from="di541779856367834766" from-iid="f1c6c2a6045849339eb5f6e263b3134b" to="di717933352558480246" to-iid="e555a54dbb4843738324e52eec30365d" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
           <item id="di291595181260245440" iid="e75c51d7a76b41c4854869754b39b88e" creation-date="07/15/2015 11:42:29" order-index="32" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="150" y1="248" x2="422" y2="378" start-border-pos="0.411060496738979" end-border-pos="0.986666335273035">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="150" y1="240" x2="493" y2="352" start-border-pos="0.397234317234584" end-border-pos="0.945065979563862">
               <points>
-                <point x="150" y="248" />
-                <point x="422" y="378" />
+                <point x="150" y="240" />
+                <point x="493" y="352" />
               </points>
             </layout>
             <relation from="di920298804429195939" from-iid="0862cb90b320427baf654b0fb509b173" to="di994264770324320460" to-iid="cc7274ed758f451c8782c44f37269e4f" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
+          <item id="di529001210474561830" iid="4bd72f4657b0439484a611751225c7cb" creation-date="07/15/2015 11:43:15" order-index="33" type="entity">
+            <layout ax="955.5" ay="511.5" awidth="175" aheight="109" x="955.5" y="511.5" width="175" height="109" angle="0" />
+            <use-case show-extension-points="true" />
+          </item>
+          <item id="di984820609390842229" iid="b9c546ceaf8c4c0097bc5bdb8ae73a28" creation-date="07/15/2015 11:43:15" order-index="34" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="1041" y1="511" x2="1033" y2="315" start-border-pos="0.121875871930804" end-border-pos="0.61487557547433">
+              <points>
+                <point x="1041" y="511" />
+                <point x="1033" y="315" />
+              </points>
+            </layout>
+            <relation from="di529001210474561830" from-iid="4bd72f4657b0439484a611751225c7cb" to="di717933352558480246" to-iid="e555a54dbb4843738324e52eec30365d" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
           <item id="di697226259153913276" iid="11e917a2bd29432585b518d7d8cf02b5" creation-date="07/15/2015 11:48:47" order-index="35" type="entity">
-            <layout ax="1165" ay="511.5" awidth="175" aheight="109" x="1165" y="511.5" width="175" height="109" angle="0" />
+            <layout ax="1165" ay="620.5" awidth="175" aheight="109" x="1165" y="620.5" width="175" height="109" angle="0" />
             <use-case show-extension-points="true" />
           </item>
           <item id="di776931012330999743" iid="f6ae1de04b5349a4a4c6e24d92c16942" creation-date="07/15/2015 11:48:47" order-index="36" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="1215" y1="516" x2="1065" y2="296" start-border-pos="0.0709345354352679" end-border-pos="0.465371595110212">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="1224" y1="623" x2="1065" y2="313" start-border-pos="0.0837208775111607" end-border-pos="0.496058545793806">
               <points>
-                <point x="1215" y="516" />
-                <point x="1065" y="296" />
+                <point x="1224" y="623" />
+                <point x="1065" y="313" />
               </points>
             </layout>
             <relation from="di697226259153913276" from-iid="11e917a2bd29432585b518d7d8cf02b5" to="di717933352558480246" to-iid="e555a54dbb4843738324e52eec30365d" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
-          </item>
-          <item id="di243100096753135773" iid="c93fb2a6690d4d419bf253732f1407df" creation-date="07/15/2015 11:49:06" order-index="37" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-26" auto-path="" x1="1167" y1="552" x2="1013" y2="529" start-border-pos="0.906785317517202" end-border-pos="0.40781989464393" name-width="124">
-              <points>
-                <point x="1167" y="552" />
-                <point x="1013" y="529" />
-              </points>
-            </layout>
-            <relation from="di697226259153913276" from-iid="11e917a2bd29432585b518d7d8cf02b5" to="di541779856367834766" to-iid="f1c6c2a6045849339eb5f6e263b3134b" />
           </item>
           <item id="di259707707129083876" iid="2725176b2f4e49f19b9caf4fd5c7fea2" creation-date="07/15/2015 11:50:26" order-index="38" type="entity">
             <layout ax="1233" ay="-61.5" awidth="195" aheight="122" x="1233" y="-61.5" width="195" height="122" angle="0" />
@@ -768,32 +759,27 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <relation from="di259707707129083876" from-iid="2725176b2f4e49f19b9caf4fd5c7fea2" to="di717933352558480246" to-iid="e555a54dbb4843738324e52eec30365d" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
-          <item id="di832330708325129413" iid="67f6ab7354fa49559689514dfa725036" creation-date="07/15/2015 12:26:51" order-index="40" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="31,-16" auto-path="" x1="560" y1="545" x2="650" y2="174" start-border-pos="0.143707911173503" end-border-pos="0.643707911173503" name-width="56">
-              <points>
-                <point x="560" y="545" />
-                <point x="650" y="174" />
-              </points>
-            </layout>
-            <relation from="di765024361150933018" from-iid="cbdb01f5be66460d997846b0c78209ba" to="di768626235908582033" to-iid="09333047ee9d4a9ebc5b3befb017a65b" />
+          <item id="di250833618807009232" iid="01da86045cd8451da9253c7b3297664b" creation-date="07/15/2015 12:39:51" order-index="40" type="entity">
+            <layout ax="123" ay="-114.5" awidth="204" aheight="100" x="123" y="-114.5" width="204" height="100" angle="0" />
           </item>
-          <item id="di292445782481322793" iid="6bfee739fff04e489149f0582f459b8b" creation-date="07/15/2015 12:27:26" order-index="41" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="-51,-8" auto-path="" x1="566" y1="229" x2="610" y2="159" start-border-pos="0.226380872590589" end-border-pos="0.726948928833008">
+          <item id="di382068276735699367" iid="32ad8cdefe36437594b82cbc79a92b3d" creation-date="07/15/2015 12:39:51" order-index="41" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="327" y1="-71" x2="506" y2="-83" start-border-pos="0.359050579071045" end-border-pos="0.861510264078776">
               <points>
-                <point x="566" y="229" />
-                <point x="610" y="159" />
+                <point x="327" y="-71" />
+                <point x="506" y="-83" />
               </points>
             </layout>
-            <relation from="di170795125765578226" from-iid="93e0066e257b4623b7ba988ee1fe5466" to="di768626235908582033" to-iid="09333047ee9d4a9ebc5b3befb017a65b" />
+            <relation from="di250833618807009232" from-iid="01da86045cd8451da9253c7b3297664b" to="di768626235908582033" to-iid="09333047ee9d4a9ebc5b3befb017a65b" />
           </item>
-          <item id="di858690058869087708" iid="d7c2242068844c589fcc17f71ad2fdc6" creation-date="07/15/2015 12:31:22" order-index="42" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" name-position="43,6" auto-path="" x1="471" y1="373" x2="485" y2="317" start-border-pos="0.145161290322581" end-border-pos="0.63960113960114" name-width="66">
+          <item id="di444532561172403583" iid="d1a1dfe1aa1c4b6897edb8f4dd24005b" creation-date="07/15/2015 10:18:47" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="478" y1="242" x2="150" y2="229" start-border-pos="0.882538812810724" end-border-pos="0.378248732430594">
               <points>
-                <point x="471" y="373" />
-                <point x="485" y="317" />
+                <point x="478" y="242" />
+                <point x="150" y="229" />
               </points>
             </layout>
-            <relation from="di994264770324320460" from-iid="cc7274ed758f451c8782c44f37269e4f" to="di170795125765578226" to-iid="93e0066e257b4623b7ba988ee1fe5466" />
+            <relation from="di170795125765578226" from-iid="93e0066e257b4623b7ba988ee1fe5466" to="di920298804429195939" to-iid="0862cb90b320427baf654b0fb509b173" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="33.22902,24.81239" />
           </item>
         </layer>
       </diagram>
@@ -869,14 +855,14 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
               <parameters />
             </sequence-action>
           </item>
-          <item id="di996672692872089297" cid="LL007" type="lifeline" name="UserService" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:02">
+          <item id="di996672692872089297" cid="LL007" type="lifeline" name="UserService" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:02">
             <stereotypes />
             <associated-diagrams />
             <owned-items />
             <style class="default" />
             <lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
-          <item id="di961786393508017355" cid="SM010" type="sequence-action" name="Message10" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:19">
+          <item id="di961786393508017355" cid="SM010" type="sequence-action" name="Message10" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:19">
             <stereotypes />
             <associated-diagrams />
             <owned-items />
@@ -885,28 +871,27 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
               <parameters />
             </sequence-action>
           </item>
-          <item id="di585098063162317100" cid="AB008" type="activation-bar" name="ExecutionOccurrence8" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:07:44">
+          <item id="di585098063162317100" cid="AB008" type="activation-bar" name="ExecutionOccurrence8" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:07:44">
             <stereotypes />
             <associated-diagrams />
             <owned-items />
             <style class="default" />
-            <activation-bar lifeline-ref="di555074108919821155" />
           </item>
-          <item id="di921491283228277864" cid="AB009" type="activation-bar" name="ExecutionOccurrence9" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:21">
+          <item id="di921491283228277864" cid="AB009" type="activation-bar" name="ExecutionOccurrence9" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:14:21">
             <stereotypes />
             <associated-diagrams />
             <owned-items />
             <style class="default" />
             <activation-bar lifeline-ref="di996672692872089297" />
           </item>
-          <item id="di242040382697414142" cid="LL008" type="lifeline" name="ViewManager" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:16:16">
+          <item id="di242040382697414142" cid="LL008" type="lifeline" name="ViewManager" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:16:16">
             <stereotypes />
             <associated-diagrams />
             <owned-items />
             <style class="default" />
             <lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
-          <item id="di987951554799954203" cid="SM012" type="sequence-action" name="Message12" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:16:27">
+          <item id="di987951554799954203" cid="SM012" type="sequence-action" name="Message12" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:16:27">
             <stereotypes />
             <associated-diagrams />
             <owned-items />
@@ -915,7 +900,7 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
               <parameters />
             </sequence-action>
           </item>
-          <item id="di126141130983379094" cid="AB010" type="activation-bar" name="ExecutionOccurrence10" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:16:28">
+          <item id="di126141130983379094" cid="AB010" type="activation-bar" name="ExecutionOccurrence10" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="07/15/2015 12:16:28">
             <stereotypes />
             <associated-diagrams />
             <owned-items />
@@ -952,10 +937,10 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <layout ax="340" ay="294" awidth="201" aheight="100" x="340" y="294" width="201" height="100" angle="0" />
           </item>
           <item id="di965177454245639895" iid="a650eab8e13a471f9d529866f9fabcc6" creation-date="07/15/2015 12:08:51" order-index="9" type="comment-connector">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="440" y1="294" x2="440" y2="243" start-border-pos="0.124378109452736" end-border-pos="0.625222024866785">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="425" y1="294" x2="409" y2="243" start-border-pos="0.105329219381608" end-border-pos="0.623193179859835">
               <points>
-                <point x="440" y="294" />
-                <point x="440" y="243" />
+                <point x="425" y="294" />
+                <point x="409" y="243" />
               </points>
             </layout>
             <relation from="di943347869254313295" from-iid="1f35b7fb047547f9ad568fc166e0c759" to="di724938660867932843" to-iid="4500019972054ed8b6a44147bf03390c" />
@@ -993,12 +978,12 @@ Datastructures may differ according to user group; e.g., the admin DS also conta
             <layout ax="1329" ay="500" awidth="20" aheight="40" x="1329" y="500" width="20" height="40" angle="0" />
           </item>
           <item id="di214734358875181071" iid="45237f71ff5f4091a1141f785d461088" creation-date="07/15/2015 12:18:17" order-index="18" type="entity">
-            <layout ax="1369" ay="145" awidth="246" aheight="100" x="1369" y="145" width="246" height="100" angle="0" />
+            <layout ax="1106" ay="251" awidth="246" aheight="100" x="1106" y="251" width="246" height="100" angle="0" />
           </item>
           <item id="di524582589858729196" iid="8c75e045847745be93b7f8ffa7fe8340" creation-date="07/15/2015 12:18:17" order-index="19" type="comment-connector">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" name-position="10,-10" auto-path="" x1="1457" y1="145" x2="1409" y2="78" start-border-pos="0.0889531577505717" end-border-pos="0.264">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" name-position="10,-10" auto-path="" x1="1269" y1="251" x2="1409" y2="78" start-border-pos="0.166015004724022" end-border-pos="0.264">
               <points>
-                <point x="1457" y="145" />
+                <point x="1269" y="251" />
                 <point x="1409" y="78" />
               </points>
             </layout>
