@@ -12,7 +12,7 @@
             $stateProvider
                 .state("home", {
                     url: "/",
-                    templateUrl: "app/views/home2.html",
+                    templateUrl: "app/views/userGrid.html",
                     controller: "AdminCtrl as vm"
                 })
                 // Products
