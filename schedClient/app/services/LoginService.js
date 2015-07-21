@@ -155,7 +155,7 @@
 
             var userIndex = findUserIndex(userName);
 
-            if(userIndex !== null && employees[userIndex].Email == password) {
+            if(userIndex !== null && users[userIndex].Email == password) {
 
                 currentUser = users[userIndex];
                 return currentUser;

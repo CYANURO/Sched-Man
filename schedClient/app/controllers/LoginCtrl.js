@@ -4,9 +4,9 @@
 
     angular
         .module("schedClient")
-        .controller("LoginCtrl", ['LoginService', ctrl]);
+        .controller("LoginCtrl", ['LoginService', '$state', ctrl]);
 
-    function ctrl() {
+    function ctrl(LoginService, $state) {
         
         var vm = this,
             _password = 123;
@@ -21,17 +21,18 @@
 
         vm.login = function(){
 
-            // var user = LoginService.GetUser(vm.userName, vm.password);
+            var user = LoginService.GetUser(vm.userName, vm.password);
             
             if(user !== null) {
 
-                console.log("Successful Login");
+                $state.transitionTo('home');
             }
             else {
 
-                console.log("Falied login");
+                console.log('Null user');
             }
-            
+
+
 
         };
 
