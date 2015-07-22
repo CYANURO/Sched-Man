@@ -23,16 +23,20 @@
 
             var user = LoginService.GetUser(vm.userName, vm.password);
             
-            if(user !== null) {
+            if(user.IsAdmin) {
 
-                $state.transitionTo('home');
+                $state.transitionTo('adminDash');
+            }
+            else if(user) {
+
+                $state.transitionTo('userDash');
             }
             else {
 
+
+                // Handle login failure
                 console.log('Null user');
             }
-
-
 
         };
 

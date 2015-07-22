@@ -10,12 +10,16 @@
             $urlRouterProvider.otherwise("login");
 
             $stateProvider
-                .state("home", {
-                    url: "/",
+                .state("userDash", {
+                    url: "/userDash",
                     templateUrl: "app/views/userGrid.html",
+                    controller: "UserCtrl as vm"
+                })
+                .state("adminDash", {
+                    url: "/adminDash",
+                    templateUrl: "app/views/home2.html",
                     controller: "AdminCtrl as vm"
                 })
-                // Products
                 .state("register", {
                     url: "/register",
                     templateUrl: "app/views/register.html",

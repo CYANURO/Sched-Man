@@ -5,123 +5,32 @@
     angular
         .module("schedClient")
         .controller("AdminCtrl",
-                    ['$scope', 'uiCalendarConfig', ctrl]);
+                    ['$scope', '$state', 'uiCalendarConfig', 'LoginService', ctrl]);
 
-    function ctrl($scope, uiCalendarConfig) {
+    function ctrl($scope, $state, uiCalendarConfig, LoginService) {
 
         var vm = this;
 
-        // Temporary data
-        vm.Employees = [
-
-            {
-                _id : "e0",
-                FullName : "Whytee D'ville",
-                Email : "elPingo@gamil.com",
-                Phone : "8019186776",
-                ImgUrl : "https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg",
-                Shifts : [
-
-                    {
-                        _id : "e0s0",
-                        TimeIn : new Date(2015, 5, 12, 1, 30),
-                        TimeOut : new Date(2015, 5, 12, 3, 30),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e0",
-                        Status : "OK"
-                    },
-                    {
-                        _id : "e0s1",
-                        TimeIn : new Date(2015, 5, 14, 10, 30),
-                        TimeOut : new Date(2015, 5, 14, 12, 0),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e0",
-                        Status : "OK"
-                    },
-                    {
-                        _id : "e0s2",
-                        TimeIn : new Date(2015, 5, 18, 16, 20),
-                        TimeOut : new Date(2015, 5, 18, 18, 30),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e0",
-                        Status : "OK"
-                    }
-                ]
-            },
-            {
-                _id : "e1",
-                FullName : "Slum Dogg",
-                Email : "gambino@gamil.com",
-                Phone : "8019199776",
-                ImgUrl : "https://s3.amazonaws.com/uifaces/faces/twitter/dakshbhagya/128.jpg",
-                Shifts : [
-
-                    {
-                        _id : "e1e2s0",
-                        TimeIn : new Date(2015, 5, 22, 8, 30),
-                        TimeOut : new Date(2015, 5, 22, 10, 30),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e1",
-                        Status : "OK"
-                    },
-                    {
-                        _id : "e1e2s1",
-                        TimeIn : new Date(2015, 5, 24, 10, 30),
-                        TimeOut : new Date(2015, 5, 24, 12, 0),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e1",
-                        Status : "OK"
-                    },
-                    {
-                        _id : "e1e2s2",
-                        TimeIn : new Date(2015, 5, 28, 16, 20),
-                        TimeOut : new Date(2015, 5, 28, 18, 30),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e1",
-                        Status : "OK"
-                    }
-                ]
-            },
-            {
-                _id : "e2",
-                FullName : "Maria Cobadonga",
-                Email : "megan@gamil.com",
-                Phone : "8019155776",
-                ImgUrl : "https://s3.amazonaws.com/uifaces/faces/twitter/annapickard/128.jpg",
-                Shifts : [
-
-                    {
-                        _id : "e2e2s0",
-                        TimeIn : new Date(2015, 5, 2, 8, 30),
-                        TimeOut : new Date(2015, 5, 2, 10, 30),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e1",
-                        Status : "OK"
-                    },
-                    {
-                        _id : "e2e2s1",
-                        TimeIn : new Date(2015, 5, 4, 10, 30),
-                        TimeOut : new Date(2015, 5, 4, 12, 0),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e1",
-                        Status : "OK"
-                    },
-                    {
-                        _id : "e2e2s2",
-                        TimeIn : new Date(2015, 5, 8, 16, 20),
-                        TimeOut : new Date(2015, 5, 8, 18, 30),
-                        AssignedBy : "mgmt",
-                        AssignedTo : "e1",
-                        Status : "OK"
-                    }
-                ]
-            }
-        ];
-
-
         ///////////////////////////////////////////////////////////////////////////////
+        
+        validate();
 
-        vm.ActiveEmployee = vm.Employees[0];
+
+        function validate() {
+
+            vm.user = LoginService.GetCurrentUser();
+            
+            if(vm.user === null) {
+
+                $state.transitionTo('login');
+            }
+            else {
+
+                vm.Employees = LoginService.GetAllUsers();
+                vm.ActiveEmployee = vm.Employees[0];    
+            }
+        }
+
 
         vm.EmployeeClick = function(index) {
 

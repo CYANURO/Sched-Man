@@ -4,7 +4,7 @@
 
     angular
         .module("schedClient")
-        .factory("LoginService", loginService);
+        .factory("LoginService", [loginService]);
                     
 
     function loginService() {
@@ -16,6 +16,7 @@
 
                 {
                     _id : "e0",
+                    IsAdmin : true,
                     FullName : "Whytee D'ville",
                     Email : "elPingo@gamil.com",
                     Phone : "8019186776",
@@ -158,6 +159,8 @@
             if(userIndex !== null && users[userIndex].Email == password) {
 
                 currentUser = users[userIndex];
+                localStorage.setItem("currentUser", JSON.stringify(currentUser));
+
                 return currentUser;
             }
             else {
@@ -182,7 +185,29 @@
 
         function getCurrentUser() {
 
-            return currentUser;
+            if(currentUser) {
+
+                return currentUser;
+            }
+            else {
+
+                currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+                return currentUser;
+            }
+        }
+
+
+        function getAllUsers() {
+
+            if(currentUser.IsAdmin) {
+
+                return users;
+            }
+            else {
+
+                return null;
+            }
         }
 
 
@@ -194,6 +219,7 @@
          ret.UserExists = userIsRegistered;
          ret.PasswordIsValid = passwordIsValid;
          ret.GetCurrentUser = getCurrentUser;
+         ret.GetAllUsers = getAllUsers;
 
          return ret;
 
