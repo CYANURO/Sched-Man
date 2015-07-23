@@ -3,7 +3,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser');
 
-var db = mongoose.connect('mongodb://localhost/sketchApiDb');
+// var db = mongoose.connect('mongodb://localhost/sketchApiDb');
 
 var app = express();
 var port = process.env.PORT || 3333;
